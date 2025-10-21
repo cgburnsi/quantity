@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=67", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "your-package-name"                 # pick a unique name on PyPI
+version = "0.1.0"
+description = "Units, unit parser, and Quantity type with robust temperature semantics."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Your Name", email = "you@example.com" }]
+keywords = ["units", "quantities", "parser", "temperature", "engineering"]
+dependencies = []                          # add future deps here
+
+[project.urls]
+Homepage = "https://github.com/<you>/<repo>"
+Issues = "https://github.com/<you>/<repo>/issues"
+
+[tool.setuptools]
+py-modules = ["quantity"]                  # <-- single module at repo root
